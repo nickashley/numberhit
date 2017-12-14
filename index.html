@@ -3,24 +3,42 @@
     <head>
         <meta charset="UTF-8" />
         <title>Number Hit!</title>
-        <h1>Number Hit</h1>
         <script src="//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js"></script>
         <style>
             body{
                 background: #ff6666;
             }
-            h1{
+            .container{
+                width:800px;
+                margin:auto;
                 text-align: center;
+            }
+            h1{
                 text-decoration: underline;
                 font-size:84px;
                 margin:0;
             }
+            .instructions{
+                text-align: center;
+                font-size:24px;
+            }
             canvas{
                 margin:auto;
+            }
+            hr{
+                margin:1em auto;
+                border:1px solid #000;
             }
         </style>
     </head>
     <body>
+	    <div class="container">
+		    <h1>Number Hit</h1>
+		    <div class="instructions">
+            <strong>Controls:</strong> Arrow Keys to move, Spacebar to shoot. <br>
+            Shoot the correct answer, then drive through the space to get a new question.
+        </div>
+        <hr>
 
     <script type="text/javascript">
 
@@ -429,5 +447,6 @@
         }
 
     </script>
+	    </div>
     </body>
 </html>
